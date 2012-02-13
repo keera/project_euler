@@ -10,8 +10,7 @@ int main(){
 }
 
 int sumVal(int num) {
-	int sum;
-	sum = 0;
+	int sum = 0;
 	if (num == 3)
 		return num;
 	else {
