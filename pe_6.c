@@ -10,7 +10,7 @@ int main(){
 	for(i = 1; i <= num; ++i)
 		sum_os += i*i;
 
-	sum_inc = (num/2)*(num+1);
+	sum_inc = (num >> 1)*(num+1);
 	sum_sq = sum_inc * sum_inc;
 	answer = sum_sq - sum_os;
 
