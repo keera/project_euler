@@ -28,10 +28,10 @@ $rows = sizeof($array);
 for($i = 1 ; $i < $rows; $i++):
 	$cols = sizeof($array[$i]);
 	for($j = 0 ; $j < $cols; $j++):
-			//check boundaries
-			$a = ($j != $cols -1) ? $array[$i][$j] + $array[$i-1][$j] : 0;
-			$b = ($j != 0) ? $array[$i][$j] + $array[$i-1][$j-1] : 0;
-			$array[$i][$j] = ($a > $b) ? $a : $b;
+		//check boundaries
+		$a = ($j != $cols -1) ? $array[$i][$j] + $array[$i-1][$j] : 0;
+		$b = ($j != 0) ? $array[$i][$j] + $array[$i-1][$j-1] : 0;
+		$array[$i][$j] = ($a > $b) ? $a : $b;
 	endfor;
 endfor;
 
