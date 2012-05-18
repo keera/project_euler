@@ -27,7 +27,6 @@ $week_map = array("0"=>"Sunday",
 
 $beginning_of_jan = 2; //starts on a tuesday
 $sunday_count = 0;
-
 for($year = 1901; $year <= 2000; $year++):
 	//sets the leap year value for feb. 
 	$month_map[2][1] = (($year % 100 == 0 && $year % 400 == 0) || $year % 4 == 0) ? 29 : 28;
